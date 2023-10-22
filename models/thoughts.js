@@ -14,30 +14,30 @@ const thoughtsSchema = new Schema(
       type: Date,
       default: Date.now,
     },
-    reactions: [
-      {
-        reactionID: {
-          type: Schema.Types.ObjectId,
-          default: new Types.ObjectId(),
-        },
-        createdAt: {
-          type: Date,
-          default: Date.now,
-        },
-        id: {
-          type: Schema.Types.ObjectId,
-          ref: 'thoughts',
-        },
-        reactionBody: {
-          type: String,
-          required: true,
-        },
-        username: {
-          type: String,
-          required: true,
-        },
-      },
-    ],
+    // reactions: [
+    //   {
+    //     reactionID: {
+    //       type: Schema.Types.ObjectId,
+    //       default: new Types.ObjectId(),
+    //     },
+    //     createdAt: {
+    //       type: Date,
+    //       default: Date.now,
+    //     },
+    //     id: {
+    //       type: Schema.Types.ObjectId,
+    //       ref: 'thoughts',
+    //     },
+    //     reactionBody: {
+    //       type: String,
+    //       required: true,
+    //     },
+    //     username: {
+    //       type: String,
+    //       required: true,
+    //     },
+    //   },
+    // ],
   },
   {
     toJSON: {
